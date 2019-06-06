@@ -16,7 +16,7 @@ class App extends React.Component{
     }
 
     componentDidMount(){
-        axios.get("http://ruckus.asia/edm/fee/data.php")
+        axios.get("https://ruckusae.com/extra/fee/data.php")
             .then(res => {
                 this.setState(() => ({
                     data: res.data,

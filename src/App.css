@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 100px;
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    border-bottom: 2px solid #ddd;
+}
+.chipBox{
+    display: inline-block;
+    width: 100%;
+}
+.selectedChip{
+    display: inline-block;
+    background: #e8e8e8;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+    padding: 0 40px 0 50px;
+    vertical-align: top;
+    margin: 0 10px 10px 0;
+}
+.selectedChip img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.selectedChip label{
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    padding: 12px 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.selectedChip button{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8e8e8e;
+    padding: 11px 5px;
+    cursor: pointer;
+}
+.input{
+    display: inline-block;
+    height: 40px;
+    width: 350px;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+input{
+    border: 0;
+    padding: 12px 0;
+    font-size: 14px;
+    outline: 0;
+    width: 100%;
+}
+.dropdown{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background: white;
+    box-shadow: 0 7px 20px -9px #bdbdbd;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+.dropdown::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.dropdown table{
+    width: 100%;
+}
+.dropdown tr{
+    
+}
+.dropdown tr:hover {
+    background: #e8e8e8;
+    cursor: pointer;
+}
+.dropdown td{
+    padding: 5px;
+}
+.dropdown td:first-child{
+    width: 40px;
+}
+.dropdown img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.dropdown label{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dropdown span{
+    font-size: 14px;
+    color: #ababab;
+}
+.selectedChip.active{
+    background: #464646;
+    color: white;
+}
+.selectedChip.active button{
+    color: white;
+}
+@media (max-width: 576px){
+    body {
+        padding: 20px;
+    }
+    .input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+
+
+

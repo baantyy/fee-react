@@ -30,7 +30,7 @@ class App extends React.Component{
     handleBackSpace = (e) => {
         const { backPress, selectedData } = this.state
         const value = e.target.value
-        if(value === "" && e.keyCode === 8){
+        if(value === "" && e.keyCode === 8 && selectedData.length > 0){
             if(backPress === 1){
                 const lastItem = selectedData[selectedData.length - 1]
 
